@@ -294,7 +294,7 @@ i {
 .menu p {
   font-size: 2rem;
 }
-.menuicerik {
+.menu-container {
   width: 100%;
   height: auto;
   display: flex;
@@ -381,16 +381,79 @@ footer nav a {
 /* mobile media query */
 @media (max-width: 428px) {
   /* header section */
-  .header-title {
-    width: 75%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 4rem;
+  header {
+    height: 160vh;
   }
-
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  i {
+    font-size: 3rem;
+    margin: 1rem 1rem;
+  }
   /* menu */
   .menu {
     background-image: none;
+    background-color: none;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  .menu-container {
+    background-color: rgb(225, 239, 230);
+  }
+  .icecekler,
+  .aperatifler,
+  .corbasalata,
+  .mezeler,
+  .tatlılar {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  .menu-item-text {
+    flex-direction: column;
+    color: black;
+  }
+  h3 {
+    border: 0.5rem solid rgb(0, 4, 17);
+    margin: auto;
+    padding: 0;
+    width: 60%;
+    text-align: center;
+    color: black;
+  }
+  h4,
+  h2 {
+    color: black;
+  }
+  article p {
+    color: black;
+    margin: 3% auto;
+  }
+
+  .icecekler .menu-item:not(:last-child) {
+    border-bottom: 0.5rem solid black;
+  }
+  .aperatifler .menu-item:not(:last-child) {
+    border-bottom: 0.5rem solid black;
+  }
+  .corbasalata .menu-item:not(:last-child) {
+    border-bottom: 0.5rem solid black;
+  }
+  .mezeler .menu-item:not(:last-child) {
+    border-bottom: 0.5rem solid black;
+  }
+  .tatlılar .menu-item:not(:last-child) {
+    border-bottom: 0.5rem solid black;
   }
 
   /* footer section */
@@ -398,5 +461,33 @@ footer nav a {
     height: auto;
     padding-top: 2.5vh;
     font-size: 2rem;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  input {
+    width: 40rem;
+    height: 3rem;
+  }
+  button {
+    display: block;
+    width: 40rem;
+    height: 3rem;
+  }
+  footer nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .copy p {
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .nav-f {
+    width: 100%;
+  }
+  .button p {
+    margin-left: auto;
+    text-align: center;
   }
 }

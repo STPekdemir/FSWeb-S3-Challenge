@@ -404,10 +404,40 @@ footer nav a {
 /* mobile media query */
 @media (max-width: 428px) {
   /* header section */
+  header {
+    height: 160vh;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  i {
+    font-size: 3rem;
+    margin: 1rem 1rem;
+  }
 
   /* gallery section */
   .gallery {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
     height: auto;
+  }
+  .gallery div {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+  }
+  .gallery img {
+    width: 100%;
+    margin: 4%;
   }
 
   /* about us section */
@@ -453,5 +483,33 @@ footer nav a {
     height: auto;
     padding-top: 2.5vh;
     font-size: 2rem;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  input {
+    width: 40rem;
+    height: 3rem;
+  }
+  button {
+    display: block;
+    width: 40rem;
+    height: 3rem;
+  }
+  footer nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .copy p {
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .nav-f {
+    width: 100%;
+  }
+  .button p {
+    margin-left: auto;
+    text-align: center;
   }
 }
